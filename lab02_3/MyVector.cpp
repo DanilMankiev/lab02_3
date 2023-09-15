@@ -25,10 +25,12 @@ void Vector::Out()
 {
 	cout << "\nVector:  x = " << x << ",  y = " << y;
 }
-double Vector::Area() {
+double Vector::Area() 
+{
 	return 0;
 }
-void Vector::Move(Vector& v) {
+void Vector::Move(Vector& v) 
+{
 	*this = *this + v;
 }
 

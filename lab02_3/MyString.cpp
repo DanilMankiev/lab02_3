@@ -21,6 +21,8 @@ MyString::MyString(char* s)
 }
 MyString::MyString()
 {
+	m_pStr = new char[1];
+	strcpy_s(m_pStr,1, "");
 
 }
 MyString::MyString(const char* s) 

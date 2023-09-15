@@ -5,9 +5,9 @@ list<Shape*> Shape::shapes;
 
 Shape::Shape() {
 	if (count < 999) {
-		list<Shape*>::iterator it = shapes.begin();
-		advance(it, count);
-		shapes.insert(it, this);
+		list<Shape*>::iterator it = shapes.begin(); 
+		advance(it, count); // Смещает iterator на count единиц
+		shapes.insert(it, this); // Заполняет динамический список shapes адресами, созданных обьектов
 	}
 	count++;
 }
