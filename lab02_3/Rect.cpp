@@ -39,10 +39,10 @@ void Rect::Inflate(double d)
 }
 void Rect::Inflate(double wide, double length)
 {
-	ptLT.x += wide/2;
-	ptRB.x += wide/2;
-	ptLT.y += length/2;
-	ptRB.y += length/2;
+	ptLT.x += wide;
+	ptRB.x += wide;
+	ptLT.y += length;
+	ptRB.y += length;
 }
 void Rect::Inflate(double left, double top, double right, double bottom) 
 {

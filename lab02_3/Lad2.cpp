@@ -32,7 +32,7 @@ int main()
 	a.Out();		b.Out();
 
 	// Вставьте код проверки операции=, присвоив объект a объекту b.
-	a = b;
+	//a = b;
 
 	// В пошаговом режиме с заходом в функции (F11)
 	// просмотрите ход выполнения вашей, а также следующей операции
@@ -99,12 +99,16 @@ int main()
 
 	stop
 
-// В классе Vector определите бинарные операции ">" и "==" так,
-// чтобы стали возможными следующие манипуляции с векторами
+		// В классе Vector определите бинарные операции ">" и "==" так,
+		// чтобы стали возможными следующие манипуляции с векторами
 
+	double d1 = 0.1;
+	double d2 = 0.2;
+	double d3 = 0.3;
+	double d4 = d1 + d2;
 	if (e > a)
 		cout << "\n\nVector e is greater than vector a\n";
-	else if (e == a)
+	else if (d3 == d4N)
 		cout << "\n Vector e is equal to vector a\n";
 	else
 		cout << "\n\nCould not compare vectors\n";
@@ -204,7 +208,7 @@ int main()
 	r.Inflate(2.5);
 	r.Out();
 
-	r.Inflate(-2.5, -2.5);
+	r.Inflate(-2.5, 2.5);
 	r.Out();
 
 	r.Inflate(1, 2, -3, 4);

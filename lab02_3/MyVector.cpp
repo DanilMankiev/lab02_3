@@ -59,7 +59,9 @@ bool Vector::operator>( Vector& v)
 }
 bool Vector::operator==(Vector& v)
 {
-	return (x == v.x && y == v.y);
+	if (fabs(x - v.x) < DBL_EPSILON && fabs(y - v.y) < DBL_EPSILON) {
+		return (x == v.x && y == v.y);
+	}
 
 }
 
