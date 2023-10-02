@@ -35,21 +35,22 @@ bool Rect::operator==(Rect& r)
 void Rect::Inflate(double d) 
 {	
 	ptLT = ptLT + d;
-	ptRB = ptRB + d;
+	ptRB.x -= d;
+	ptRB.y -= d;
 }
 void Rect::Inflate(double wide, double length)
 {
 	ptLT.x += wide;
-	ptRB.x += wide;
+	ptRB.x -= wide;
 	ptLT.y += length;
-	ptRB.y += length;
+	ptRB.y -= length;
 }
 void Rect::Inflate(double left, double top, double right, double bottom) 
 {
 	ptLT.x += left;
 	ptLT.y += top;
-	ptRB.x += right;
-	ptRB.y += bottom;
+	ptRB.x -= right;
+	ptRB.y -= bottom;
 }
 
 void Rect::Out() 

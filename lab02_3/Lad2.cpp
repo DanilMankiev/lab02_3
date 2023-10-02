@@ -102,13 +102,10 @@ int main()
 		// В классе Vector определите бинарные операции ">" и "==" так,
 		// чтобы стали возможными следующие манипуляции с векторами
 
-	double d1 = 0.1;
-	double d2 = 0.2;
-	double d3 = 0.3;
-	double d4 = d1 + d2;
+	
 	if (e > a)
 		cout << "\n\nVector e is greater than vector a\n";
-	else if (d3 == d4N)
+	else if (e == a)
 		cout << "\n Vector e is equal to vector a\n";
 	else
 		cout << "\n\nCould not compare vectors\n";
@@ -247,7 +244,6 @@ int main()
 
 	par[0] = new Vector(1,1);
 	par[0]->Out();
-
 	delete par[0];
 
 // Для наглядности вы можете вставить вывод числа векторов в те
